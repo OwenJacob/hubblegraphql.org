@@ -4,55 +4,95 @@
     box-sizing: border-box;
 }
 
+/* Acumin Pro Bold
+font-family: acumin-pro,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Acumin Pro Bold Italic
+font-family: acumin-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Acumin Pro Italic
+font-family: acumin-pro,sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Acumin Pro Regular
+font-family: acumin-pro,sans-serif;
+font-weight: 400;
+font-style: normal; */
+
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: acumin-pro, sans-serif;
     line-height: 1.5;
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ol, ul {
     margin: 0;
+}
+
+li {
+    padding-bottom: 0.3em;
+}
+
+section {
+    padding-bottom: 1em;
+}
+
+footer {
+    color: grey;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 1em 0;
 }
 
 .container {
     width: 85%;
-    max-width: 1200px;
-    margin: auto 0;
+    margin: auto;
+    padding: 1em 0;
 }
 
-.hero-title {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 4rem;
-    font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+.hero-title > img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-subtitle {
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 400;
     font-size: 1.5rem;
-    font-size: clamp(0.5rem, 4vw, 1.5rem);
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    letter-spacing: 2px;
     margin-top: 2rem;
 }
 
 .section-title {
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #4d4d4d;
+    padding-bottom: 0.5em;
 }
 
 .section-subtitle {
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
+    letter-spacing: 0.5px;
+    padding-bottom: 0.4em;
+}
+
+.container > p {
+    padding-bottom: 0.3em;
 }
 
 .hero {
-    color: white;
+    color: grey;
     text-align: center;
-    padding: 5em 0;
-    background-image: radial-gradient( #191970, #000000);
+    padding: 4em 0;
+    background-color: #f0f0f0;
 }
