@@ -39,6 +39,7 @@ h1, h2, h3, p, ol, ul {
 }
 
 li {
+    font-size: clamp(10px, 2vw, 1.5rem);
     padding-bottom: 0.3em;
 }
 
@@ -47,6 +48,7 @@ section {
 }
 
 footer {
+    font-size: clamp(7.5px, 1vw, 1.5rem);
     color: grey;
     text-align: center;
     background-color: #f0f0f0;
@@ -55,11 +57,14 @@ footer {
 
 .container {
     width: 85%;
+    max-width: 1200px;
     margin: auto;
     padding: 1em 0;
 }
 
 .hero-title > img {
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,13 +72,14 @@ footer {
 .hero-subtitle {
     font-weight: 400;
     font-size: 1.5rem;
-    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    font-size: clamp(14px, 3vw, 2rem);
     letter-spacing: 2px;
     margin-top: 2rem;
 }
 
 .section-title {
     font-weight: 700;
+    font-size: clamp(12px, 2.5vw, 1.5rem);
     letter-spacing: 0.5px;
     color: #4d4d4d;
     padding-bottom: 0.5em;
@@ -82,11 +88,13 @@ footer {
 .section-subtitle {
     font-weight: 400;
     font-style: italic;
+    font-size: clamp(11px, 2.5vw, 1.5rem);
     letter-spacing: 0.5px;
     padding-bottom: 0.4em;
 }
 
-.container > p {
+.content {
+    font-size: clamp(10px, 1.2vw, 1.5rem);
     padding-bottom: 0.3em;
 }
 
